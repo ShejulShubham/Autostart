@@ -1,4 +1,4 @@
-# ========================
+ # ========================
 # Powerlevel10k Instant Prompt (keep at top)
 # ========================
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -72,3 +72,21 @@ eval "$(fzf --zsh)"
 # ========================
 cp ~/.zshrc ~/Everything/Programming/Autostart
 cp ~/.zsh_history ~/Everything/Programming/Autostart
+
+# ========================
+# Alias
+# ========================
+alias home="cd ~"
+alias zshconfig="nano ~/.zshrc"
+alias zshhistory="nano ~/.zsh_history"
+alias acciojob="cd ~/Everything/AccioJob"
+alias work="cd ~/Everything/Work/TrustAdditiveDjango"
+
+# =======================
+# Path
+# =======================
+export PATH="$HOME/.local/bin:$PATH"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
